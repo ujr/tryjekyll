@@ -20,6 +20,7 @@ author: "me"
 year: 2020
 
 # Build settings
+permalink: /:categories/:year/:month/:day/:title
 sass:
   sass_dir: _sass
 include: ["_pages"]
