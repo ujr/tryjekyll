@@ -1,0 +1,21 @@
+---
+layout: default
+title: Collections
+---
+
+<h2>Authors</h2>
+
+<ul>
+  {% for author in site.authors %}
+  <li>
+    <h3><a href="{{ author.url }}">{{ author.name }}</a>
+     <small>&bull; {{ author.position }}</small></h3>
+    <p>{{ author.content | markdownify }} </p>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Categories</h2>
+
+<p>Would be similar</p>
+

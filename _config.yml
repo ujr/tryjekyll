@@ -20,10 +20,36 @@ author: "me"
 year: 2020
 
 # Build settings
+
 permalink: /:categories/:year/:month/:day/:title
+
+collections:
+  authors:
+    output: true
+  categories:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "collection"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 sass:
   sass_dir: _sass
+
 include: ["_pages"]
+
 markdown: kramdown
 kramdown:
   input: GFM
